@@ -12,6 +12,9 @@ import UseMemo from '../../views/examples/UseMemo'
 import UseContext from '../../views/examples/UseContext'
 import UseReducer from '../../views/examples/UseReducer'
 import UseCustom from '../../views/examples/UseCustom'
+import ImgUseState from '../../images/useState.png'
+import ImgUseEffect from '../../images/useEffect.png'
+import { CodeImage } from '../../components/image/CodeImage'
 
 const Content = props => (
     <main className="Content">
@@ -21,9 +24,11 @@ const Content = props => (
             </Route>
             <Route path="/useState">
                 <UseState />
+                <CodeImage url={ImgUseState}/>
             </Route>
             <Route path="/useEffect">
                 <UseEffect />
+                <CodeImage url={ImgUseEffect}/>
             </Route>
             <Route path="/useRef">
                 <UseRef />

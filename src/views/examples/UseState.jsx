@@ -4,6 +4,7 @@ import SectionTitle from '../../components/layout/SectionTitle'
 
 const UseState = (props) => {
     const [count, setCount] = useState(0)
+    const [search, setSearch] = useState("")
 
     return (
         <div className="UseState">
@@ -25,6 +26,12 @@ const UseState = (props) => {
             </div>
 
             <SectionTitle title="Execício #02"/>
+            <input type="text"
+                className="input"
+                placeholder="Digite aqui..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+            />
         </div>
     )
 }
